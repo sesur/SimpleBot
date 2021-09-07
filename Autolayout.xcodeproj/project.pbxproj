@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D5B57E626E73E6C00F1AE78 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B57E526E73E6C00F1AE78 /* ViewControllerTests.swift */; };
 		7D88BE3D2215654C00934C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88BE3C2215654C00934C7D /* AppDelegate.swift */; };
 		7D88BE3F2215654C00934C7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88BE3E2215654C00934C7D /* ViewController.swift */; };
 		7D88BE422215654C00934C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D88BE402215654C00934C7D /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		7D5B57DB26E7337600F1AE78 /* AutolayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutolayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5B57DF26E7337600F1AE78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D5B57E526E73E6C00F1AE78 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		7D88BE392215654C00934C7D /* Autolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D88BE3C2215654C00934C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D88BE3E2215654C00934C7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				7D5B57DF26E7337600F1AE78 /* Info.plist */,
+				7D5B57E526E73E6C00F1AE78 /* ViewControllerTests.swift */,
 			);
 			path = AutolayoutTests;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				TargetAttributes = {
 					7D5B57DA26E7337600F1AE78 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = 7D88BE382215654C00934C7D;
 					};
 					7D88BE382215654C00934C7D = {
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5B57E626E73E6C00F1AE78 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +246,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
@@ -253,6 +259,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.AutolayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autolayout.app/Autolayout";
@@ -263,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
