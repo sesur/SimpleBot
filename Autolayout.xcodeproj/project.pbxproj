@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D5B57E626E73E6C00F1AE78 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B57E526E73E6C00F1AE78 /* ViewControllerTests.swift */; };
+		7D5B57E826E746E400F1AE78 /* TesHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B57E726E746E400F1AE78 /* TesHelpers.swift */; };
 		7D88BE3D2215654C00934C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88BE3C2215654C00934C7D /* AppDelegate.swift */; };
 		7D88BE3F2215654C00934C7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88BE3E2215654C00934C7D /* ViewController.swift */; };
 		7D88BE422215654C00934C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D88BE402215654C00934C7D /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		7D5B57DB26E7337600F1AE78 /* AutolayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutolayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5B57DF26E7337600F1AE78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D5B57E526E73E6C00F1AE78 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		7D5B57E726E746E400F1AE78 /* TesHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesHelpers.swift; sourceTree = "<group>"; };
 		7D88BE392215654C00934C7D /* Autolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D88BE3C2215654C00934C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D88BE3E2215654C00934C7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				7D5B57DF26E7337600F1AE78 /* Info.plist */,
 				7D5B57E526E73E6C00F1AE78 /* ViewControllerTests.swift */,
+				7D5B57E726E746E400F1AE78 /* TesHelpers.swift */,
 			);
 			path = AutolayoutTests;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5B57E826E746E400F1AE78 /* TesHelpers.swift in Sources */,
 				7D5B57E626E73E6C00F1AE78 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

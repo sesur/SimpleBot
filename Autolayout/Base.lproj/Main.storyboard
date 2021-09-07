@@ -65,7 +65,7 @@
                                                 <rect key="frame" x="0.0" y="92.5" width="315" height="33"/>
                                                 <color key="backgroundColor" red="0.46030741930000002" green="0.30431777240000002" blue="0.73981976510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="What restaurant">
+                                                <state key="normal" title="suggest ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -87,7 +87,7 @@
                                                 <rect key="frame" x="0.0" y="52" width="315" height="33"/>
                                                 <color key="backgroundColor" red="0.46030741930000002" green="0.30431777240000002" blue="0.73981976510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="add restaurant">
+                                                <state key="normal" title="add">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -113,12 +113,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="0Xy-ua-Ndi" id="JgF-mp-lkb"/>
                         <outlet property="addRestaurantStackView" destination="DhT-uP-Hui" id="xmm-FN-06u"/>
                         <outlet property="addTextFied" destination="MjD-9Q-Mf3" id="X0e-ld-oGj"/>
                         <outlet property="showLabel" destination="EsN-g2-T60" id="TwF-Pw-2NP"/>
                         <outlet property="showStackView" destination="dq6-VU-B7E" id="xPb-Dw-4d9"/>
                         <outlet property="staticShowLabel" destination="tXi-kq-Mur" id="GlC-FL-i4u"/>
-                        <outlet property="sugestRestaurantStackView" destination="nt6-kf-9nP" id="9sc-UL-ziI"/>
+                        <outlet property="suggestButton" destination="ZJh-Gn-Wzb" id="Unk-yu-Tq3"/>
+                        <outlet property="suggestRestaurantStackView" destination="nt6-kf-9nP" id="9sc-UL-ziI"/>
                         <outlet property="watchLabel" destination="0xq-RY-PNx" id="l7C-B7-pFP"/>
                     </connections>
                 </viewController>

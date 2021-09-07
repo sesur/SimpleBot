@@ -15,18 +15,20 @@ class ViewController: UIViewController {
     @IBOutlet private (set) weak var addTextFied: UITextField!
     @IBOutlet private (set) weak var showStackView: UIStackView!
     @IBOutlet private (set) weak var staticShowLabel: UILabel!
-    @IBOutlet private (set) weak var sugestRestaurantStackView: UIStackView!
+    @IBOutlet private (set) weak var suggestRestaurantStackView: UIStackView!
     @IBOutlet private (set) weak var addRestaurantStackView: UIStackView!
+    @IBOutlet private (set) weak var suggestButton: UIButton!
+    @IBOutlet private (set) weak var addButton: UIButton!
     
     private var showArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        [showStackView, sugestRestaurantStackView].forEach {
+        [showStackView, suggestRestaurantStackView].forEach {
             $0?.isHidden = true
         }
         showStackView.isHidden = true
-        sugestRestaurantStackView.isHidden = true
+        suggestRestaurantStackView.isHidden = true
         
     }
     
@@ -50,7 +52,7 @@ class ViewController: UIViewController {
             updateShowLabel()
             
             if showArray.count > 1 {
-                sugestRestaurantStackView.isHidden = false
+                suggestRestaurantStackView.isHidden = false
                 if !watchLabel.text!.isEmpty  {
                     staticShowLabel.isHidden = false
                     watchLabel.isHidden = false

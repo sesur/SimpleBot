@@ -16,14 +16,18 @@ class ViewControllerTests: XCTestCase {
     }
     
     func test_outlets_shoulBeConnected() {
-        
         XCTAssertNotNil(makeSUT().showLabel, "showLabel")
         XCTAssertNotNil(makeSUT().watchLabel, "watchLabel")
         XCTAssertNotNil(makeSUT().addTextFied, "addTextFied")
         XCTAssertNotNil(makeSUT().showStackView, "showStackView")
         XCTAssertNotNil(makeSUT().staticShowLabel, "staticShowLabel")
-        XCTAssertNotNil(makeSUT().sugestRestaurantStackView, "sugestRestaurantStackView")
+        XCTAssertNotNil(makeSUT().suggestRestaurantStackView, "sugestRestaurantStackView")
         XCTAssertNotNil(makeSUT().addRestaurantStackView, "addRestaurantStackView")
+    }
+    
+    func test_buttons_tapping_shouldTape() {
+        XCTAssertNotNil(tap(makeSUT().addButton))
+        XCTAssertNotNil(tap(makeSUT().suggestButton))
     }
     
     //MAR:- Helpers
