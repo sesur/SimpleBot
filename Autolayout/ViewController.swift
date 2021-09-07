@@ -10,30 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet private weak var showLabel: UILabel!
-    @IBOutlet private weak var whatYouShouldWatchLabel: UILabel!
-    @IBOutlet private weak var addRestaurantTextFied: UITextField!
-    @IBOutlet private weak var showStackView: UIStackView!
-    @IBOutlet private weak var staticRestaurantShow: UILabel!
-    @IBOutlet private weak var restaurantSpokenStackView: UIStackView!
-    @IBOutlet private weak var addRestaurantStackView: UIStackView!
+    @IBOutlet private (set) weak var showLabel: UILabel!
+    @IBOutlet private (set) weak var watchLabel: UILabel!
+    @IBOutlet private (set) weak var addTextFied: UITextField!
+    @IBOutlet private (set) weak var showStackView: UIStackView!
+    @IBOutlet private (set) weak var staticShowLabel: UILabel!
+    @IBOutlet private (set) weak var sugestRestaurantStackView: UIStackView!
+    @IBOutlet private (set) weak var addRestaurantStackView: UIStackView!
     
     private var showArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        [showStackView, restaurantSpokenStackView].forEach {
+        [showStackView, sugestRestaurantStackView].forEach {
             $0?.isHidden = true
         }
         showStackView.isHidden = true
-        restaurantSpokenStackView.isHidden = true
+        sugestRestaurantStackView.isHidden = true
         
     }
     
     @IBAction private func whatRestaurantButtonPressed(_ sender: UIButton) {
-        whatYouShouldWatchLabel.text = showArray.randomElement()
+        watchLabel.text = showArray.randomElement()
         
-        [whatYouShouldWatchLabel, staticRestaurantShow].forEach {
+        [watchLabel, staticShowLabel].forEach {
             $0?.isHidden = false
         }
     }
@@ -43,23 +43,23 @@ class ViewController: UIViewController {
     }
     
     private func updateShows() {
-        guard let text = addRestaurantTextFied.text else {return}
+        guard let text = addTextFied.text else {return}
         if !text.isEmpty {
             showArray.append(text)
             showStackView.isHidden = false
             updateShowLabel()
             
             if showArray.count > 1 {
-                restaurantSpokenStackView.isHidden = false
-                if !whatYouShouldWatchLabel.text!.isEmpty  {
-                    staticRestaurantShow.isHidden = false
-                    whatYouShouldWatchLabel.isHidden = false
+                sugestRestaurantStackView.isHidden = false
+                if !watchLabel.text!.isEmpty  {
+                    staticShowLabel.isHidden = false
+                    watchLabel.isHidden = false
                 } else {
-                    staticRestaurantShow.isHidden = true
-                    whatYouShouldWatchLabel.isHidden = true
+                    staticShowLabel.isHidden = true
+                    watchLabel.isHidden = true
                 }
             }
-            addRestaurantTextFied.text = ""
+            addTextFied.text = ""
         }
     }
     

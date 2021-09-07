@@ -11,4 +11,26 @@ import XCTest
 
 class ViewControllerTests: XCTestCase {
     
+    func test_viewDidLoad() {
+        XCTAssertNotNil(makeSUT(), "viewDidLoad")
+    }
+    
+    func test_outlets_shoulBeConnected() {
+        
+        XCTAssertNotNil(makeSUT().showLabel, "showLabel")
+        XCTAssertNotNil(makeSUT().watchLabel, "watchLabel")
+        XCTAssertNotNil(makeSUT().addTextFied, "addTextFied")
+        XCTAssertNotNil(makeSUT().showStackView, "showStackView")
+        XCTAssertNotNil(makeSUT().staticShowLabel, "staticShowLabel")
+        XCTAssertNotNil(makeSUT().sugestRestaurantStackView, "sugestRestaurantStackView")
+        XCTAssertNotNil(makeSUT().addRestaurantStackView, "addRestaurantStackView")
+    }
+    
+    //MAR:- Helpers
+    private func makeSUT() -> ViewController {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let sut: ViewController = sb.instantiateViewController(identifier: String(describing: ViewController.self))
+        sut.loadViewIfNeeded()
+        return sut
+    }
 }
