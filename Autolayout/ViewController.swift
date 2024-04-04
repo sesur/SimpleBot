@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Autolayout
-//
-//  Created by Sergiu on 2/14/19.
-//  Copyright © 2019 Sergiu. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
